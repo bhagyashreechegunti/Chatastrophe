@@ -24,7 +24,9 @@ def tag_priorities(text):
 
 @app.route("/", methods=["GET", "POST"])
 def home():
-    output = ""
+    output = ""git add .
+git commit -m "initial commit with app.py and project files"
+
     if request.method == "POST":
         convo = request.form["conversation"]
         summary = summarize_text(convo)
